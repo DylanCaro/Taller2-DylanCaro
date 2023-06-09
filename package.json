@@ -1,0 +1,22 @@
+{
+  "name": "taller2-dylancaro",
+  "version": "1.0.0",
+  "description": "Repositorio para desarrollar el taller 2 del curso Desarrollo Front End.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanCaro/Taller2-DylanCaro.git"
+  },
+  "author": "Dylan Caro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanCaro/Taller2-DylanCaro/issues"
+  },
+  "homepage": "https://github.com/DylanCaro/Taller2-DylanCaro#readme",
+  "dependencies": {
+    "typescript": "^5.1.3"
+  }
+}
