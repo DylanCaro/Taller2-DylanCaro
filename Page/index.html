@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuarios</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
+
 <body>
-    
+
     <div class="container">
-        <center><div><h1>Registro de Usuarios</h1></div></center>
+        <center>
+            <div>
+                <h1>Registro de Usuarios</h1>
+            </div>
+        </center>
 
         <br><br>
 
         <center>
             <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Realizar Registro de Usuarios
+                Realizar Registro de Usuarios
             </button>
         </center>
 
@@ -37,58 +44,55 @@
                                     <option value="3" id="tipoDocumento">Pasaporte</option>
                                 </select>
                                 <br><br>
-                                <label form="numerodocumento">Número de Documento</label>
-                                <input type="number" class="form-check-label" id="numerodocumento" name="numerodocumento" required>
-                                <div class="invalid feedback">
-                                    Es necesario ingresar el documento
-                                </div>
+                                <label form="numeroidentificacion">Número de Documento</label>
+                                <input type="number" class="form-check-label" id="numeroidentificacion"
+                                    name="numeroidentificacion" required>
                                 <br>
-                                <label form="Nombres">Nombres</label>
-                                <input type="text" class="form-check-label" id="Nombres" name="Nombres" required>
-                                <div class="invalid feedback">
-                                    Es necesario ingresar el nombre
-                                </div>
                                 <br>
-                                <label form="Apellidos">Apellidos</label>
-                                <input type="text" class="form-check-label" id="Apellidos" name="Apellidos" required>
-                                <div class="invalid feedback">
-                                    Es necesario ingresar el apellido
-                                </div>
+                                <label form="nombres">Nombres</label>
+                                <input type="text" class="form-check-label" id="nombres" name="nombres" required>
                                 <br>
-                                <label form="Telefono">Teléfono</label>
-                                <input type="number" class="form-check-label" id="Telefono" name="Telefono" required>
-                                <div class="invalid feedback">
-                                    Es necesario ingresar el telefono
-                                </div>
                                 <br>
-                                <label form="Correo">Correo Electronico</label>
-                                <input type="text" class="form-check-label" id="Correo" name="Correo" required>
-                                <div class="invalid feedback">
-                                    Es necesario ingresar el correo electronico
-                                </div>
+                                <label form="apellidos">Apellidos</label>
+                                <input type="text" class="form-check-label" id="apellidos" name="apellidos" required>
                                 <br>
-                                <label form="LinkedIn">LinkedIn</label>
-                                <input type="text" class="form-check-label" id="LinkedIn" name="LinkedIn" required>
-                                <div class="invalid feedback">
-                                    Es necesario ingresar el LinkedIn
-                                </div>
                                 <br>
-                                <label form="GitHub">GitHub</label>
-                                <input type="text" class="form-check-label" id="GitHub" name="GitHub" required>
-                                <div class="invalid feedback">
-                                    Es necesario ingresar el GitHub
-                                </div>
+                                <label form="telefono">Teléfono</label>
+                                <input type="number" class="form-check-label" id="telefono" name="telefono" required>
+                                <br>
+                                <br>
+                                <label form="correo">Correo Electronico</label>
+                                <input type="text" class="form-check-label" id="correo" name="correo" required>
+                                <br>
+                                <br>
+                                <label form="linkedin">LinkedIn</label>
+                                <input type="text" class="form-check-label" id="linkedin" name="linkedin" required>
+                                <br>
+                                <br>
+                                <label form="github">GitHub</label>
+                                <input type="text" class="form-check-label" id="github" name="github" required>
+                                <br>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="enviar">Guardar</button>
+                        <button type="button" class="btn btn-primary" id="btn-guardar">Guardar</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Creacion de la tabla -->
+
+    <div id="students-data">
+
+    </div>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
 </html>
